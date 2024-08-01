@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>IMC</title>
+</head>
+<body>
+    <div class="card_imc">
+        <h1 class="imc_title">Calcul de l'IMC</h1>
+        <form>
+                    <div class="imc_box_entry">
+            <label for="imc_weight">Poids : (en kg)</label>
+            <input type="number" max="999" min="20" name="imc_weight" id="imc_weight" required>
+            <label for="imc_size">Taille : (en metre ex : 1.75 = 1m75)</label>
+            <input type="number" min="1" max="3" name="imc_size" id="imc_size" required>
+        </div>
+        </form>
+
+
+
+        <button type="submit" class="imc_btn">Calculer</button>
+    </div>
+
+    <div class="imc_box_result">
+        <p class="imc_result_text">Resultat : <span class="imc_result"></span></p>
+        <p class="">Interprétation : <span class="imc_info"></span></p>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
